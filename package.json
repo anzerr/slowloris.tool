@@ -1,0 +1,26 @@
+{
+	"name": "slowloris",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cli.util": "git+ssh://git@github.com:anzerr/cli.util.git",
+		"http.server": "git+ssh://git@github.com:anzerr/http.server.git"
+	},
+	"devDependencies": {
+		"eslint": "^5.10.0",
+		"eslint-config-basic": "git+ssh://git@github.com/anzerr/eslintrc.git"
+	},
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
+	"bin": {
+		"slowloris": "./src/bin.js"
+	}
+}
