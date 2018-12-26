@@ -3,9 +3,11 @@
 const Cli = require('cli.util'),
 	Loris = require('./loris.js');
 
-let cli = new Cli(process.argv, {});
+let cli = new Cli(process.argv, {
+	max: ['n', 'm']
+});
 
-let l = new Loris(cli.get('host'), Number(cli.get('n') || 20000))
+let l = new Loris(cli.get('host'), Number(cli.get('max') || 20000))
 	.attack();
 
 l.on('ramp', (r) => {

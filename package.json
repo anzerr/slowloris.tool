@@ -7,7 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "anzerr",
 	"license": "ISC",
 	"dependencies": {
 		"cli.util": "git+ssh://git@github.com:anzerr/cli.util.git",
@@ -22,5 +22,17 @@
 	},
 	"bin": {
 		"slowloris": "./src/bin.js"
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anzerr/slowloris.tool.git"
+	},
+	"engines": {
+		"node": ">= 0.10.0"
+	},
+	"types": "index.d.ts",
+	"bugs": {
+		"url": "https://github.com/anzerr/slowloris.tool/issues"
+	},
+	"homepage": "https://github.com/anzerr/slowloris.tool#readme"
 }

@@ -9,7 +9,7 @@ class Loris extends require('events') {
 	constructor(u, cap, speed = 200) {
 		super();
 		this.speed = speed;
-		this._url = url.parse(u);
+		this._url = url.parse((u.match(/^https*\:\/\//)) ? u : 'http://' + u);
 		this.cap = cap;
 		this.current = [];
 		this.connections = 0;
