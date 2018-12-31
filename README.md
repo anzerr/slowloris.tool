@@ -4,7 +4,7 @@ Example of slowloris attack it should start with a few connections and try and r
 
 #### `Install`
 ``` bash
-npm install --save git+ssh://git@github.com/anzerr/request.libary.git
+npm install --save git+ssh://git@github.com/anzerr/slowloris.tool.git
 ```
 
 ``` bash
