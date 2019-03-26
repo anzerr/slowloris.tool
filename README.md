@@ -4,11 +4,11 @@ Example of slowloris attack it should start with a few connections and try and r
 
 #### `Install`
 ``` bash
-npm install --save git+ssh://git@github.com/anzerr/slowloris.tool.git
+npm install --save git+http://git@github.com/anzerr/slowloris.tool.git
 ```
 
 ``` bash
-git clone git+ssh://git@github.com/anzerr/slowloris.tool.git &&
+git clone git+http://git@github.com/anzerr/slowloris.tool.git &&
 cd slowloris.tool &&
 npm link
 ```
