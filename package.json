@@ -1,14 +1,28 @@
 {
 	"name": "slowloris.tool",
 	"version": "1.0.0",
-	"description": "",
+	"keywords": [],
+	"homepage": "https://github.com/anzerr/slowloris.tool#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/slowloris.tool/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/anzerr/slowloris.tool.git"
+	},
+	"license": "MIT",
+	"author": "anzerr",
 	"main": "index.js",
+	"types": "index.d.ts",
+	"bin": {
+		"slowloris": "./src/bin.js"
+	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"keywords": [],
-	"author": "anzerr",
-	"license": "MIT",
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
 	"dependencies": {
 		"cli.util": "git+https://git@github.com/anzerr/cli.util.git",
 		"http.server": "git+https://git@github.com/anzerr/http.server.git"
@@ -17,22 +31,7 @@
 		"eslint": "^5.10.0",
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
-	},
-	"bin": {
-		"slowloris": "./src/bin.js"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/anzerr/slowloris.tool.git"
-	},
 	"engines": {
 		"node": ">= 0.10.0"
-	},
-	"types": "index.d.ts",
-	"bugs": {
-		"url": "https://github.com/anzerr/slowloris.tool/issues"
-	},
-	"homepage": "https://github.com/anzerr/slowloris.tool#readme"
+	}
 }
