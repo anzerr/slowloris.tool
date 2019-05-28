@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/anzerr/slowloris.tool.git"
+		"url": "git@github.com:anzerr/slowloris.tool.git"
 	},
 	"license": "MIT",
 	"author": "anzerr",
@@ -28,7 +28,7 @@
 		"http.server": "git+https://git@github.com/anzerr/http.server.git"
 	},
 	"devDependencies": {
-		"eslint": "^5.10.0",
+		"eslint": "5.11.1",
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
 	"engines": {
