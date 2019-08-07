@@ -15,7 +15,6 @@ npm link
 ```
 
 ### `Example`
-
 ``` bash
 slowloris --host localhost:8080 --max 50000
 slowloris --host https://localhost:8080
