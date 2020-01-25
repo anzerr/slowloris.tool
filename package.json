@@ -1,7 +1,15 @@
 {
 	"name": "slowloris.tool",
 	"version": "1.0.6",
-	"keywords": [],
+	"description": "Slowloris attack util",
+	"keywords": [
+		"slowloris",
+		"slowloris-attack",
+		"example",
+		"http",
+		"nodejs",
+		"util"
+	],
 	"homepage": "https://github.com/anzerr/slowloris.tool#readme",
 	"bugs": {
 		"url": "https://github.com/anzerr/slowloris.tool/issues"
@@ -18,7 +26,7 @@
 		"slowloris": "./src/bin.js"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "node example.js"
 	},
 	"eslintConfig": {
 		"extends": "eslint-config-basic"

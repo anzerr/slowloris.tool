@@ -32,7 +32,8 @@ class Loris extends require('events') {
 			port: this._url.port || (secure ? 443 : 80),
 			host: this._url.hostname
 		};
-		setInterval(() => {
+		clearInterval(this.tick);
+		this.tick = setInterval(() => {
 			if (this.current.length < this.cap && this.connections === this.current.length) {
 				let ramp = Math.min(this.cap - this.current.length, 500);
 				this.emit('ramp', ramp);
@@ -50,6 +51,16 @@ class Loris extends require('events') {
 		}, 100);
 
 		return this;
+	}
+
+	stop() {
+		clearInterval(this.tick);
+		for (let i in this.current) {
+			if (this.current[i]) {
+				this.current[i].kill();
+			}
+		}
+		this.emit('end');
 	}
 
 }

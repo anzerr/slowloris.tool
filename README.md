@@ -1,5 +1,7 @@
 
 ### `Intro`
+![GitHub Actions status | publish](https://github.com/anzerr/slowloris.tool/workflows/publish/badge.svg)
+
 Example of slowloris attack it should start with a few connections and try and ramp up until I can't connected anymore
 
 #### `Install`
