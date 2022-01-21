@@ -1,6 +1,6 @@
 {
 	"name": "slowloris.tool",
-	"version": "1.0.11",
+	"version": "1.0.12",
 	"description": "Slowloris attack util",
 	"keywords": [
 		"slowloris",
